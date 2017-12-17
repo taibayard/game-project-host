@@ -1,0 +1,228 @@
+html,body{
+	margin:0;
+	height:100%;
+	background-color: #e4e0e0;
+	user-select: none;
+}
+main{
+	width:100%;
+	height:700px;
+	position: relative;
+}
+.bitcoin-wrapper{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 7em;
+    left: 6em;
+    cursor: pointer;
+}
+.bitcoin-wrapper img{
+    width:	100%;
+    height: 100%;
+}
+.session-info-wrapper{
+	width: 700px;
+	height: 500px;
+	position: absolute;
+	right: 6em;
+	top: 4.5em;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0px 0px 15px 1px #bbaeae;
+}
+.upgrades-wrapper{
+	width: 90%;
+	height: 500px;
+	position: absolute;
+	left: 4.5em;
+	border-radius: 3px;
+	box-shadow: 0px 0px 15px 1px #bbaeae;
+	background-color: white;
+}
+/*session info*/
+label{
+	font-family: 'Lilita One', cursive;
+}
+.click-count{
+    width: 15em;
+    height: 150px;
+    text-align: center;
+    color:grey;
+    position: absolute;
+    display: inline-block;
+    left: 2em;
+    bottom: 11em;
+    border-top: none;
+}
+.click-count label{
+	font-size: 2.7em;
+	border-bottom: 2.5px solid #f39c12;
+	color: #f39c12;
+}
+.click-count a{
+	font-size:3em;
+	font-family: 'Bungee', cursive;
+	display: inline-block;
+	margin-top: 0.5em;
+	color: #bbbbbb;
+}
+.current-cash{
+	width: 100%;
+	height: 124px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	margin-top: 2em;
+	border-bottom: 4px solid #f39c12;
+}
+.current-cash label{
+	font-size: 4.3em;
+	color: #f39c12;
+	font-family: 'Bungee', cursive;
+}
+.current-cash a{
+	font-size: 4em;
+	font-family: 'Bungee', cursive;
+	display: inline-block;
+	color: #086b08;
+}
+.click-profit{
+    width: 18em;
+    height: 150px;
+    text-align: center;
+    color:grey;
+    position: absolute;
+    display: inline-block;
+    left: 1em;
+    bottom: 0em;
+    border-top: none;
+}
+.click-profit label{
+	font-size: 2em;
+	border-bottom: 2.5px solid #f39c12;
+	color: #f39c12;
+}
+.click-profit a, .total-profit a{
+	font-size: 2em;
+	font-family: 'Bungee', cursive;
+	display: inline-block;
+	margin-top: 0.5em;
+	color: #086b08;
+}
+.click-profit a:before,.total-profit a:before {
+ 	color: #f39c12;
+ 	content: "BTC : ";
+}
+.total-profit{
+    width: 16em;
+    height: 150px;
+    text-align: center;
+    color:grey;
+    position: absolute;
+    display: inline-block;
+    right: 2em;
+    bottom: 0.5em;
+    border-top: none;
+}
+.total-profit label{
+	font-size: 2.5em;
+	border-bottom: 2.5px solid #f39c12;
+	color: #f39c12;
+	display: block;
+}
+.click-worth{
+	width: 16em;
+	height: 150px;
+	text-align: center;
+	color: #f5aa40;
+	position: absolute;
+	display: inline-block;
+	right: 2em;
+	bottom: 10.8em;
+	border-top: none;
+}
+.click-worth label{
+	font-size: 2.5em;
+	border-bottom: 2.5px solid #f39c12;
+	color: #f39c12;
+	display: block;
+}
+.click-worth a{
+	font-size:3em;
+	font-family: 'Bungee', cursive;
+	display: inline-block;
+	margin-top: 0.5em;
+	color: #086b08;
+}
+/*end session info*/
+/*upgrades*/
+.per-click-upgrade{
+    width: 500px;
+    height: 150px;
+    background-color: #929292;
+    position: relative;
+    margin-top: 2em;
+    margin-left: 3em;
+    cursor: pointer;
+    border-radius:3px;
+    box-shadow: 0px 0px 15px 1px #bbaeae;
+}
+.per-click-upgrade label{
+	font-size: 2.7em;
+	color: white;
+	text-shadow: 0px 3px #f39c12bf;
+	position: absolute;
+	right: 0.5em;
+	top: 1.1em;
+}
+.per-click-upgrade a,.gpu-upgrade a{
+	position: absolute;
+	font-size: 2em;
+	color: white;
+	top: 1.6em;
+	margin-left: .3em;
+	font-family: 'Bungee', cursive;
+}
+.per-click-upgrade a:after,.gpu-upgrade a:after{
+	content: " x";
+	font-family: 'Lilita One', cursive;
+}
+.upgrade-cost:before{
+	content: "Cost : ";
+	color:white;
+}
+.upgrade-cost{
+	font-size: 1.5em !important;
+	position: absolute !important;
+	top: 0.5em!important;
+	color: #ffa310!important;
+	right: 1em!important;
+	text-shadow: none !important;
+}
+.upgrade-desc{
+    position: absolute;
+    bottom: 0;
+    margin-left: 4em;
+    color: white;
+}
+.gpu-upgrade{
+	width: 500px;
+	height: 150px;
+	background-color: #929292;
+	position: absolute;
+	right: 3em;
+	top: 2em;
+	cursor: pointer;
+	border-radius:3px;
+	box-shadow: 0px 0px 15px 1px #bbaeae;
+}
+.gpu-upgrade label{
+	font-size: 2.7em;
+	color: white;
+	text-shadow: 0px 3px #f39c12bf;
+	position: absolute;
+	right: 3.5em;
+	top: 1.1em;
+}
+/*end upgrades*/
