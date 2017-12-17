@@ -8,7 +8,7 @@ html,body,main{
 	height: 351px;
 	background-color:grey;
 	display:inline-block;
-	margin: 5em 10em 5em 10em;
+	margin: 5em 5em 5em 4em;
 	border-radius: 3px;
 	overflow: hidden;
 	cursor: pointer;
