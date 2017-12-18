@@ -15,7 +15,7 @@ html,body{
 	text-shadow: -9px 7px 10px rgb(60, 4, 0);
 	margin: 0;
 	letter-spacing: 12px;
-	animation: growShrink 4.5s infinite;
+	animation: growShrink 4s infinite;
 	transition: all 1s linear;
 }
 #play-btn{
@@ -45,23 +45,15 @@ html,body{
 @keyframes growShrink {
     0%   {
     	transform: scale(1);
-    	text-shadow: -9px 7px 10px rgb(60, 4, 0);
+    	text-shadow: -9px 7px 10px rgba(60, 4, 0,.5);
     }
-    20%  {
-    	transform: scale(1.05);
-    	text-shadow: -7px 5px 10px rgb(60, 4, 0);
-    }
-    40%  {
-    	transform: scale(1.15);
-    	text-shadow: -5px 3px 10px rgb(60, 4, 0);
-    }
-    80% {
-    	transform: scale(1.25);
-    	text-shadow: 0px 0px 10px rgb(60, 4, 0);
+    50%{
+        transform: scale(1.25);
+    	text-shadow: 0px 0px 0px rgba(60, 4, 0,.5);	
     }
     100% {
     	transform: scale(1);
-    	text-shadow: -9px 7px 10px rgb(60, 4, 0);
+    	text-shadow: -9px 7px 10px rgba(60, 4, 0,.5);
     }
 }
 
